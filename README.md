@@ -39,6 +39,6 @@ ejc.cash 团队致力于打造去中心化的娱乐平台，虽然现阶段还�
 
 # 相关帐户
 
-- eosjoycenter    ejc.cash官方账户(也是本游戏中开发奖励账户)
-- eosejcminers    本游戏合约账户
-- ejcoinstoken　　　EJC token帐户
+- [eosjoycenter](https://eosflare.io/account/eosjoycenter)   ejc.cash官方账户
+- [eosejcminers](https://eosflare.io/account/eosejcminers)   本游戏合约账户
+- [ejcoinstoken](https://eosflare.io/account/ejcoinstoken)　　EJC token帐户
