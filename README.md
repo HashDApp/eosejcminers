@@ -44,6 +44,14 @@ EOS挖矿游戏是ejc.cash团队开发的一款挖矿类游戏。玩家的每一
 
 游戏定于北京时间2018年9月3日　20:00:00　开始。
 
+# 游戏数据查看
+
+```
+cleos get table eosejcminers eosejcminers gameinfo    //查看游戏信息
+cleos get table eosejcminers eosejcminers rewards     //查看矿工奖励信息
+cleos get table eosejcminers eosejcminers minerinfo   //查看所有矿工个人信息
+```
+
 # 关于ejc.cash
 
 ejc.cash 团队致力于打造去中心化的娱乐平台，虽然现阶段还需要团队账户参与游戏的开奖环节，（这是由于EOS交易模式限制造成，只有交易完成后才能得到交易ID,在合约中无法得到交易ID），所以现阶段该游戏属于半中心化产品（但这并不影响公开、公平、公正），但随着EOS的发展，在将来可以修改完善成为真正的去中心化游戏。
