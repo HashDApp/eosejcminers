@@ -172,14 +172,12 @@ public:
     void transfer(account_name from, account_name to, asset quantity, string memo)
     {
    
-
-        
         require_auth(from);
-
-        eosio_assert(current_time() > game_start_time, "The game will start at 2018-09-3 20:00:00");
+      
         if(from == _self || to != _self){
             return;
         }  
+        eosio_assert(current_time() > game_start_time, "The game will start at 2018-09-3 20:00:00");
         eosio_assert(quantity.symbol == GAME_SYMBOL,"only accepts EOS for buy  ");
         eosio_assert(quantity.amount >= 1000,"to small transaction");
         eosio_assert(memo == string("1") 

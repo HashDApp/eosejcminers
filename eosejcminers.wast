@@ -1921,15 +1921,6 @@
   (call $require_auth
    (get_local $1)
   )
-  (call $eosio_assert
-   (i64.gt_u
-    (call $current_time)
-    (i64.load offset=8
-     (get_local $0)
-    )
-   )
-   (i32.const 1440)
-  )
   (block $label$0
    (block $label$1
     (block $label$2
@@ -1954,6 +1945,15 @@
              (get_local $12)
              (get_local $2)
             )
+           )
+           (call $eosio_assert
+            (i64.gt_u
+             (call $current_time)
+             (i64.load offset=8
+              (get_local $0)
+             )
+            )
+            (i32.const 1440)
            )
            (call $eosio_assert
             (i64.eq
