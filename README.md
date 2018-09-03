@@ -32,12 +32,13 @@ EOS挖矿游戏是ejc.cash团队开发的一款挖矿类游戏。玩家的每一
 
 由于矿工每次投入95%都会进入矿池，使得矿池不断增长，占用矿工大量资金。因此游戏中独特地设置了“能量碎片PPI",以供矿工回收矿池内自己投入的资金。
 
-其定价规则为　矿工持有PPI总量除以当前奖池总奖金。
+其定价规则为　当前奖池总奖金除以矿工持有PPI总量。
 
 不稳定的矿工指在挖矿后立即销毁自己持有的PPI,可以得到其持有PPI市值的75%的EOS.剩余的25%将遗留在奖池当中而推高PPI价格。由于每次均能拿回投入的大部分，因此可以进行高频的挖矿，而增加自己得到矿工奖励的机会。
 
 稳定的矿工长期持有PPI,当不稳定的矿工离场时PPI的价格将逐渐增长。
 
+矿工需要注意的是由于PPI独特的定价规则，初期没有矿工离场的情况下，PPI价格会缓慢下降，可以吸引更多矿工加入，但随着矿工离开，PPI价格会逐渐增长，最忠实稳定的矿工将获得很高收益。
 各难度挖矿的回报率经过精心计算，玩家收益的数学期望是0.99，高于目前市面上博彩类游戏，同时矿池也将以0.01的数学期望而逐渐增长。
 
 # 游戏阶段
@@ -49,7 +50,7 @@ EOS挖矿游戏是ejc.cash团队开发的一款挖矿类游戏。玩家的每一
 ```
 cleos get table eosejcminers eosejcminers gameinfo    //查看游戏信息
 cleos get table eosejcminers eosejcminers rewards     //查看矿工奖励信息
-cleos get table eosejcminers eosejcminers minerinfo   //查看所有矿工个人信息
+cleos get table eosejcminers eosejcminers minerinfo   //查看所有矿工信息（主要是PPI持仓情况)
 ```
 
 # 关于ejc.cash
